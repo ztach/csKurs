@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace kurs1
 {
@@ -10,7 +7,9 @@ namespace kurs1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("cześć {0}", args[0]);
+            string name = args[0];
+            
+            Console.WriteLine("cześć " + name);
         }
     }
 }
