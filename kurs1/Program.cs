@@ -7,7 +7,9 @@ namespace kurs1
     {
         static void Main(string[] args)
         {
-            string name = args[0];
+            Console.WriteLine("napisz coś");
+
+            string name = Console.ReadLine() ;
             
             Console.WriteLine("cześć " + name);
         }
