@@ -7,30 +7,35 @@ namespace kurs1
     {
         static void Main(string[] args)
         {
-            Console.Write("PODAJ IMIĘ: ");
-            string name = Console.ReadLine();
-            Console.WriteLine("cześć " + name);
-
-            Console.Write("PODAJ WIEK: ");
-            
-            bool czyInt = int.TryParse(Console.ReadLine(), out int wiek);
-            if (!czyInt)
+            for (; ; )
             {
-                Console.WriteLine("to nie liczba");
-            }
-            else if(wiek > 17)
-            {
+                Console.Write("PODAJ IMIĘ: ");
+                string name = Console.ReadLine();
+                Console.WriteLine("cześć " + name);
 
-                Console.WriteLine("masz " + wiek + " lat - idziemy na browara");
-            }
-            else
-            {
-                Console.WriteLine("masz " + wiek + " lat - idziemy na mleko");
-            }
-            
+                Console.Write("PODAJ WIEK: ");
 
-            Console.Write("ENTER");
-            Console.ReadLine();
+                bool czyInt = int.TryParse(Console.ReadLine(), out int wiek);
+                if (!czyInt)
+                {
+                    Console.WriteLine("to nie liczba");
+                }
+                else if (wiek > 17)
+                {
+
+                    Console.WriteLine("masz " + wiek + " lat - idziemy na browara");
+                }
+                else
+                {
+                    Console.WriteLine("masz " + wiek + " lat - idziemy na mleko");
+                }
+
+
+                
+                Console.ReadLine();
+                Console.Clear();
+
+            }
         }
     }
 }
