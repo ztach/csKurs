@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="test.uporzadkowany" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DziennikUcznia\DziennikUcznia.csproj">

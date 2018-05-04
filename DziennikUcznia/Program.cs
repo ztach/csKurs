@@ -13,6 +13,14 @@ namespace DziennikUcznia
             Dziennik dziennik = new Dziennik();
             Console.WriteLine("PODAJ OCENĘ");
 
+            dziennik.NameChanged += OnNameChanged;
+            dziennik.NameChanged += OnNameChanged2;
+
+            dziennik.name = "Staszek";
+            
+            dziennik.name = "Basia";
+
+            /*
             for(; ; )
             {
                 bool t = Double.TryParse(Console.ReadLine(), out double f);
@@ -35,9 +43,23 @@ namespace DziennikUcznia
 
             Console.WriteLine("wynik");
             Console.WriteLine(dziennik.sredniaOcen());
-            string s = Console.ReadLine();
+            */
+            
+            Console.ReadKey();
 
 
         }
+
+        private static void OnNameChanged(object sender, NameChangedEventArgs args)
+        {
+            Console.WriteLine($"zmiana imienia z {args.ExistingName} na {args.NewName}");
+        }
+
+        private static void OnNameChanged2(object sender, NameChangedEventArgs args)
+        {
+            Console.WriteLine($"stare imie: {args.ExistingName}, nowe imie: {args.NewName}");
+        }
+
+
     }
 }

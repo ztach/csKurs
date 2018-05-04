@@ -16,8 +16,34 @@ namespace DziennikUcznia
         public Dziennik()
         {
             oceny = new List<double>();
+            _name = "Józek";
         }
-        
+        private string _name;
+
+        public string name
+        {
+            get
+            {
+                return name.ToUpper();
+            }
+            set
+            {
+                if (!string.IsNullOrEmpty(value))
+                {
+                    if (_name != value)
+                    {
+                        NameChangedEventArgs args = new NameChangedEventArgs();
+                        args.ExistingName = _name;
+                        args.NewName = value;
+
+                        NameChanged(this, args);
+                    }
+                }
+                _name = value;
+            }
+        }
+
+        public event NameChangedDelegate NameChanged;
 
         /// <summary>
         /// lista ocen
