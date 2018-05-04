@@ -1,21 +1,42 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 
 namespace DziennikUcznia
 {
-    class Dziennik
+    /// <summary>
+    /// klasa Dziennik
+    /// obsługuje listę ocen wprowadzanych dla jednego ucznia
+    /// i oblicza jego średnią
+    /// </summary>
+    public class Dziennik
     {
-        List<double> oceny = new List<double>();
+  
+        
+        public Dziennik()
+        {
+            oceny = new List<double>();
+        }
+        
 
+        /// <summary>
+        /// lista ocen
+        /// </summary>
+        List<double> oceny;
+
+        /// <summary>
+        /// podajesz oceny dla ucznia
+        /// </summary>
+        /// <param name="ocena"></param>
         public void podajOcene(double ocena)
         {
             oceny.Add(ocena);
         }
 
+        /// <summary>
+        /// obliczam średnią ocen
+        /// </summary>
+        /// <returns></returns>
         public double sredniaOcen()
         {
             double sumaOcen = 0;
@@ -24,7 +45,7 @@ namespace DziennikUcznia
             {
                 sumaOcen += o;
             }
-            return sumaOcen / oceny.Count();
+            return sumaOcen / oceny.Count;
         }
 
 

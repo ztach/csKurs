@@ -7,7 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kurs1", "kurs1\kurs1.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DziennikUcznia", "DziennikUcznia\DziennikUcznia.csproj", "{F3113BF0-38CF-4611-A958-3E122CCFFB42}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dzienniczek.test", "Dzienniczek.test\Dzienniczek.test.csproj", "{5D5EDDB8-88AD-49A3-9CA5-2F582301E4FB}"
+EndProject
 Global
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -21,6 +26,10 @@ Global
 		{F3113BF0-38CF-4611-A958-3E122CCFFB42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3113BF0-38CF-4611-A958-3E122CCFFB42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3113BF0-38CF-4611-A958-3E122CCFFB42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D5EDDB8-88AD-49A3-9CA5-2F582301E4FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D5EDDB8-88AD-49A3-9CA5-2F582301E4FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D5EDDB8-88AD-49A3-9CA5-2F582301E4FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D5EDDB8-88AD-49A3-9CA5-2F582301E4FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

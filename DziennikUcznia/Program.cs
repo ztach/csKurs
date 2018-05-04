@@ -24,6 +24,7 @@ namespace DziennikUcznia
                 {
                     Console.WriteLine("to jest: " + f);
                     dziennik.podajOcene(f);
+                    
                 }
                 else
                 {
