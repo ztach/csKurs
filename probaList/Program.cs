@@ -14,6 +14,7 @@ namespace probaList
     {
         static void Main(string[] args)
         {
+            
             #region  LISTA I WYDRUK
             Console.WriteLine("LISTA I WYDRUK");
             Console.WriteLine("");
@@ -129,7 +130,7 @@ namespace probaList
             Console.ReadKey();
             Console.Clear();
             #endregion
-
+            
             #region JSON I LINQ
             Console.WriteLine("JSON I LINQ");
             Console.WriteLine("");
@@ -152,6 +153,31 @@ namespace probaList
                 JsonSerializer serializer = new JsonSerializer();
                 serializer.Serialize(file, oSelectedSlowa);
             }
+
+            Console.WriteLine("naciśnij coś");
+            object xx = "";
+               xx = Console.ReadKey().Key;
+            Console.WriteLine(xx.ToString());
+
+            Console.WriteLine("");
+
+            Console.Write("Press <Enter> to exit... ");
+            while (Console.ReadKey().Key != ConsoleKey.Enter) { }
+
+            Console.WriteLine("");
+
+            if (xx.Equals(ConsoleKey.Enter))
+            {
+                Console.WriteLine("ooo");
+            }
+            Console.WriteLine("");
+
+            Console.WriteLine("naciśnij znowu");
+            var x = Console.ReadKey();
+            Console.WriteLine(x.Key);
+
+            string w = (x.Key.Equals(ConsoleKey.X ) ? "tak":"nie" );
+            Console.WriteLine(w);
 
             Console.ReadKey();
             Console.Clear();
